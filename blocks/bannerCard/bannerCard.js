@@ -1,7 +1,7 @@
 export default function decorate(block) {
     const[
       imageEl,
-      imageAltEl,
+      altTextEl,
       titleEl,
       descriptionEl
     ] = block.children
@@ -9,7 +9,7 @@ export default function decorate(block) {
     const imageElement = imageEl.querySelector('img');
     const imageBanner = imageElement?.getAttribute('src')?.trim() || "";
 
-    const imageAlt = imageAltEl?.textContent?.trim() || "";
+    const imageAlt = altTextEl?.textContent?.trim() || "";
     const imageTitle = titleEl?.textContent?.trim() || "";
     const imageDescription = descriptionEl?.textContent?.trim() || "";
 
