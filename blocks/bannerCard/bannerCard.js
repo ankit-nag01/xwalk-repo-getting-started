@@ -1,5 +1,4 @@
 export default function decorate(block) {
-  function getBannerCard(){
     const[
       imageEl,
       imageAltEl,
@@ -14,28 +13,18 @@ export default function decorate(block) {
     const imageTitle = titleEl?.textContent?.trim() || "";
     const imageDescription = descriptionEl?.textContent?.trim() || "";
 
-    return{
-      imageBanner,
-      imageAlt,
-      imageTitle,
-      imageDescription
-    };
-
-  }
-
-  const BannerContent = getBannerCard();
 
   const BannerHTML = `
   <div class="main-container">
   <div class="banner-container">
     <div class="banner-image">
-    <img src="${BannerContent.imageBanner}" alt="${BannerContent.imageAlt}">
+    <img src="${imageBanner}" alt="${imageAlt}">
       <div class="banner-content">
         <div class="bannerCard-title">
-        ${BannerContent.imageTitle}
+        ${imageTitle}
         </div>
         <div class="bannerCard-description">
-        ${BannerContent.imageDescription}
+        ${imageDescription}
         </div>
       </div>
     </div>
