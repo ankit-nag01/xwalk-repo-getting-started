@@ -43,6 +43,5 @@ export default function decorate(block) {
 </div>
   `;
 
-  block.innerHTML = '';
-  block.appendChild(BannerHTML);
+  block.innerHTML = BannerHTML;
 }
