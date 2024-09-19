@@ -10,7 +10,7 @@ export default function decorate(block) {
     const imageTitle = titleEl?.textContent?.trim() || "";
 
   const BannerHTML = `
-  <div class="main-container">
+  <div class="bannerCard-container">
 
         <div class="bannerCard-title">
         <img src="${imageBanner}" alt="${imageAlt}">
